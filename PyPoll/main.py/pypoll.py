@@ -36,6 +36,16 @@ with open(pypoll_csv, 'r') as csvfile:
     print("-------------------------")
 
 
+    f = open("pypoll_analysis.txt", "w")
     
-
-            
+    f.write("Election Results")
+    f.write("-------------------------")
+    f.write(f'Total Votes: {total_votes}')
+    f.write("-------------------------")
+    f.write(f'Khan:  {Khan_percent}.000%   ({Khan})')
+    f.write(f'Correy:  {Correy_percent}.000%   ({Correy})')
+    f.write(f'Li:  {Li_percent}.000%   ({Li})')
+    f.write(f"O'Tooley:  {Tooley_percent}.000%   ({Tooley})")
+    f.write("-------------------------")
+    f.write(f'Winner: {winner}')
+    f.write("-------------------------")       

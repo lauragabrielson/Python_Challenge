@@ -1,2 +1,1 @@
-# Python_Challenge
-Laura Gabrielson Python Homework
+# python_challenge

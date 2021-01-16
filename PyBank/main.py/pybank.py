@@ -1,3 +1,4 @@
+#import files
 import os
 import csv 
 
@@ -50,7 +51,21 @@ print(f'Greatest Increase in Profits: {max_month} (${max_change})')
 print(f'Greatest Decrease in Profits: {min_month} (${min_change})')
 
 
-    
+f = open("pybank_analysis.txt", "w")
+f.write("Financial Analysis")
+
+f.write("---------------------------------")
+
+f.write(f'Total Months: {months}')
+
+f.write(f'Toatl: ${total_revenue}')
+
+f.write(f'Average Change: ${rounded_average}')
+
+f.write(f'Greatest Increase in Profits: {max_month} (${max_change})')
+
+f.write(f'Greatest Decrease in Profits: {min_month} (${min_change})')
+
 
 
 

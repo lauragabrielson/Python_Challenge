@@ -22,8 +22,8 @@ with open(pybank_csv, 'r') as csvfile:
     
 #calculate monthly revenue change
     revenue_change = []
-    for x in range(1, len(revenue)):
-        revenue_change.append((int(revenue[x]) - int(revenue[x-1])))
+    for row in range(1, len(revenue)):
+        revenue_change.append((int(revenue[row]) - int(revenue[row-1])))
 
 #cancluate average change and round at 2 decimals      
 average_change = (sum(revenue_change) / len(revenue_change))

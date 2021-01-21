@@ -13,7 +13,6 @@ with open(pypoll_csv, 'r') as csvfile:
     lines = [line for line in csvreader]
     votes = Counter([l[2] for l in lines])
 
-    #candidate = votes.keys()
  #extract candidate votes from dictionary
     cand1 = (votes["Khan"])
     cand2 = (votes["Correy"])
